@@ -11,3 +11,12 @@ Prerequisites
 To run this project, you need:
  - OpenGL Utility Toolkit (GLUT)
  - C++ compiler that supports OpenGL
+
+Installation
+1) Clone the repository:
+   - git clone https://github.com/Shrilatha-Bhandarkar/Acquarium
+   - cd Acquarium
+2) Compile the project:
+   - g++ main.cpp -o main -lGL -lGLU -lglut
+3) Run the executable:
+   - ./main
