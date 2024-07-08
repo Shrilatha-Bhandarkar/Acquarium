@@ -7,7 +7,6 @@ using namespace std;
 float fish1PosX = -1.0f;
 float fish1Speed = 0.01f;
 
-// Fish 2 variables
 float fish2PosX = 1.0f;
 float fish2Speed = 0.015f;
 void fish1() {
@@ -53,7 +52,6 @@ void fish1() {
     glVertex2f(0.06f, -0.069f);  
     glEnd();
 
-    // Draw eye
     glColor3f(0.0, 0.0, 0.0);
     glPointSize(5.0);
     glBegin(GL_POINTS);
@@ -72,14 +70,13 @@ void fish2() {
     glVertex2f(0.0f, 0.1f);  
     glVertex2f(0.1f, 0.0f);  
     glEnd();
-    //bottom
+    
     glBegin(GL_TRIANGLES);
     glVertex2f(-0.2f, 0.0f);
     glVertex2f(0.0f, -0.1f);  
     glVertex2f(0.1f, 0.0f);  
     glEnd();
 
-    // Draw tail
     glColor3f(0.0, 0.0, 1.0);
     glBegin(GL_TRIANGLES);
     glVertex2f(-0.2f, 0.0f);  
@@ -179,7 +176,6 @@ void grassland() {
     }
     glEnd();
 
-    // Pebble 2
     glBegin(GL_POLYGON);
     for (int i = 0; i < 360; i += 20) {
         float angle = i * 3.14159f / 180.0f;
@@ -189,7 +185,6 @@ void grassland() {
     }
     glEnd();
    
-     // Pebble 3
     glBegin(GL_POLYGON);
     for (int i = 0; i < 360; i += 20) {
         float angle = i * 3.14159f / 180.0f;
@@ -199,7 +194,6 @@ void grassland() {
      }
     glEnd();
 
-      // Pebble 4
      glBegin(GL_POLYGON);
      for (int i = 0; i < 360; i += 20) {
        float angle = i * 3.14159f / 180.0f;
@@ -257,7 +251,7 @@ void drawBubbles() {
             float angle = i * 2.0f * M_PI / numSegments;
             float x = bubble.x + bubble.radius * cos(angle);
             float y = bubble.y + bubble.radius * sin(angle);
-            glVertex2f(x, y); // Add vertex to the fan
+            glVertex2f(x, y); 
         }
         glEnd();
     }
