@@ -6,6 +6,7 @@ Features
 - Fish Animation: Two fish move across the screen with different speeds and colors.
 - Bubbles: Animated bubbles rise and descend at different positions on the screen.
 - Grassland: A static background resembling a grassy underwater landscape.
+- Starfish: Four star fishes are rescaling across the screen
   
 Prerequisites
 To run this project, you need:
