@@ -1,6 +1,6 @@
 # Acquarium
 
-This project showcases a simple animation using OpenGL, featuring two fish swimming, animated bubbles, various starfish resizing and a grassland background.
+This project showcases a simple animation using OpenGL.
 
 **Features**
 - Fish Animation: Two fish move across the screen with different speeds and colors.
